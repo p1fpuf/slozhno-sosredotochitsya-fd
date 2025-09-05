@@ -1,9 +1,132 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+	/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+	min-inline-size: 375px;
+	margin: 0;
+	color: var(--accent-color, #ff0070);
+	font-family: var(--main-font, sans-serif);
+	background-color: var(--bg-color, #000028);
+	background-image: var(--bg-image);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+.main__heading {
+	font-weight: var(--bold-weight, 700);
+	line-height: 83%;
+	color: var(--main-heading-color, #db00ff);
+	text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+	align-self: flex-end;
+}
+
+.heading {
+	font-weight: var(--bold-weight, 700);
+	font-size: 18px;
+	line-height: 23.4px;
 }
 
 .header {
-  display: grid;
+	block-size: 668px;
+	min-block-size: 668px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr min-content 1fr;
+	padding: 10px;
+}
+
+.header__theme-menu-button {
+	border: none;
+	background-color: initial;
+  font-size: var(--font-size);
+  font-weight: var(--normal-weight);
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+}
+
+
+.header__theme-menu {
+	justify-self: end;
+	align-self: center;
+}
+
+.header__theme-menu-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.rec-label {
+	display: var(--rec-display);
+	position: absolute;
+	justify-self: end;
+	padding-top: 2px;
+	margin-right: 10px;
+	padding-right: 18px;
+	font-size: var(--font-size, 18px);
+	font-weight: var(--normal-weight, 400);
+}
+
+.rec-label::after {
+	content: "";
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	top: 8px;
+	background-color: var(--accent-color,#ff0070);
+	border-radius: 50%;
+	box-shadow: 0px 0px 4px 2px var(--accent-color, #FF0070);
+	margin-left: 10px;
+}
+
+.decorated-zone::after, 
+.decorated-zone::before {
+	content: "";
+	position: absolute;
+	width: 25.04px;
+	height: 25px;
+}
+
+.decorated-zone::before {
+	top: 0;
+	right: 0;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	margin-block-start: 10px;
+	inset-inline-end: 10px;
+}
+
+.decorated-zone::after {
+	bottom: 0;
+	left: 0;
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	inset-inline-start: 10px;
+	margin-block-end: 10px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-hover-color, #FF007066);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color, #FF0070);
+}
+
+.header__theme-menu-button:focus {
+	border-bottom: 1px solid var(--accent-color, #FF0070);
+	outline: none;
+}
+
+.header__description {
+	font-weight: var(--bold-weight);
+	font-size: var(--font-size);
+	align-self: center;
+}
+
+.title-decor {
+	color: var(--bg-color, #000028);
+	background-color: var(--accent-color, #FF0070);
 }
