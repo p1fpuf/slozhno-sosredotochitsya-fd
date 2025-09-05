@@ -29,7 +29,7 @@
 }
 
 .header {
-	block-size: 100vh;
+	block-size: 100vhпше;
 	min-block-size: 668px;
 	display: grid;
 	grid-template-columns: 1fr;

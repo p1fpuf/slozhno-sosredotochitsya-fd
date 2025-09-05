@@ -15,7 +15,7 @@
 	--button-hover-color: #ff007066;
 }
 
-@media (width <= 375px) {
+@media (width >= 375px) {
 	.main__heading {
 		font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	}
