@@ -13,16 +13,56 @@
 	--bg-color: #000028;
 	--main-heading-color: #db00ff;
 	--button-hover-color: #ff007066;
+	--text-color: #F1B2CE;
+	--text-line-height: 23.4px;
+	--header-padding: 10px;
 }
 
 @media (width >= 375px) {
 	.main__heading {
 		font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	}
+
+	.footer__heading {
+		font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+	}
+
+	.header {
+		padding: var(--header-padding, 10px);
+	}
+
+	.rec-label {
+		margin-right: 20px;
+		padding-right: 18px;
+	}
 }
 
 @media (width >=768px) {
   .main__heading {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+		margin-left: -20px;
   }
+
+	.footer__heading {
+		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+	}
+
+	.header {
+		--header-padding: 20px;
+		padding: var(--header-padding, 20px);
+	}
+
+	.rec-label {
+		margin-right: 29px;
+		padding-right: 19px;
+	}
+
+	.header__description {
+		width: 50%;
+		justify-self: flex-end;
+	}
+}
+
+@media (width >= 1024px) {
+
 }
