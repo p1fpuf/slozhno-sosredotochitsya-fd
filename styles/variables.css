@@ -4,6 +4,7 @@
 */
 :root {
 	--main-font: 'IBM Plex mono';
+	--bg-image: url('/images/cover-image-dark.png');
 	--normal-weight: 400;
 	--bold-weight: 700;
 	--font-size: 18px;
