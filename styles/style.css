@@ -137,12 +137,13 @@ a:focus-visible {
 }
 
 .description {
-	padding: 0 10px;
-	padding-top: 50px;
+	display: grid;
+	gap: 20px;
 }
 
-section:first-child {
-	padding-top: 40px;
+.answer__description {
+	display: grid;
+	gap: 10px;
 }
 
 .description__title {
@@ -150,14 +151,10 @@ section:first-child {
 	font-size: var(--font-size, 18px);
 }
 
-.answer__description {
-	padding-top: 20.5px;
-}
-
 .answer__title {
 	font-weight: var(--bold-weight, 700);
 	font-size: var(--font-size, 18px);
-	margin-bottom: 10px;
+	line-height: var(--text-line-height, 23.4px);
 }
 
 .answer__text {
@@ -170,13 +167,22 @@ section:first-child {
 .answer__subtitle {
 	font-weight: var(--normal-weight, 400);
 	font-size: var(--font-size, 18px);
-	margin-top: 20.5px;
-	margin-bottom: 10px;
+	line-height: var(--text-line-height, 23.4px);
+}
+
+.answer__subtitle:nth-child(2) {
+	margin-top: 10px;
+}
+
+.card__description {
+	display: grid;
+	grid-template-columns: 1fr;
+	
 }
 
 .gallery {
 	display: grid;
-	gap: 10px;
+	
 }
 
 .gallery img {
@@ -190,7 +196,6 @@ section:first-child {
 	min-block-size: 668px;
 	display: grid;
 	grid-template-columns: 1fr;
-	margin-top: 40px;
 }
 
 .footer__heading {
