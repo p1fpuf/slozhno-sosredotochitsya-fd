@@ -54,14 +54,8 @@ a:focus-visible {
 }
 
 
-.header__theme-menu {
-	justify-self: end;
-	align-self: center;
-}
-
 .header__theme-menu-list {
 	display: flex;
-	flex-direction: column;
 	gap: 10px;
 }
 
@@ -117,11 +111,11 @@ a:focus-visible {
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color, #FF0070);
+  border: 1px solid var(--button-active-color, #FF0070);
 }
 
 .header__theme-menu-button:focus-visible {
-	border-bottom: 1px solid var(--accent-color, #FF0070);
+	border-bottom: 1px solid var(--button-active-color, #FF0070);
 	outline: none;
 }
 

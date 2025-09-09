@@ -4,7 +4,6 @@
 */
 :root {
 	--main-font: 'IBM Plex mono';
-	--bg-image: url('/images/cover-image-dark.png');
 	--normal-weight: 400;
 	--bold-weight: 700;
 	--font-size: 18px;
@@ -13,6 +12,7 @@
 	--bg-color: #000028;
 	--main-heading-color: #db00ff;
 	--button-hover-color: #ff007066;
+	--button-active-color: #ff0070;
 	--text-color: #F1B2CE;
 	--text-line-height: 23.4px;
 	--header-padding: 10px;
@@ -29,6 +29,15 @@
 
 	.header {
 		padding: var(--header-padding, 10px);
+	}
+	
+	.header__theme-menu {
+		justify-self: end;
+		align-self: center;
+	}
+
+	.header__theme-menu-list {
+		flex-direction: column;
 	}
 
 	.rec-label {
@@ -146,5 +155,37 @@
 }
 
 @media (width >= 1024px) {
+	.header__theme-menu {
+		justify-self: center;
+		align-self: flex-start;
+	}
 
+	.header__theme-menu-list {
+		flex-direction: row;
+	}
+
+	.description__title {
+		width: 314px;
+	}
+
+	.answer__description {
+		width: 648px;
+	}
+
+	.description:nth-child(2) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.description:nth-child(2) .answer__title {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.description:nth-child(2) .answer__description {
+		all: unset;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		grid-row: 2;
+	}
 }
