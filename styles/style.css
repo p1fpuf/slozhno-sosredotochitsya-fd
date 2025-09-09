@@ -4,7 +4,7 @@
 	/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 	min-inline-size: 375px;
 	margin: 0;
-	color: var(--accent-color, #ff0070);
+	color: var(--main-color, #ff0070);
 	font-family: var(--main-font, sans-serif);
 	background-color: var(--bg-color, #000028);
 	background-image: var(--bg-image);

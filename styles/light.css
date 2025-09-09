@@ -10,10 +10,12 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --main-font: 'IBM Plex mono';
+  --bg-image: url('/images/cover-image-light.png');
 	--normal-weight: 400;
 	--bold-weight: 700;
 	--font-size: 18px;
 	--rec-display: none;
+  --main-color: #353430;
 	--accent-color: #FF8DCB;
 	--bg-color: #353430;
 	--main-heading-color: #FFC2E6;
@@ -27,7 +29,6 @@
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   --bg-image: url('/images/cover-image-light.png');
-  color: var(--bg-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,6 +39,7 @@
 	--bold-weight: 700;
 	--font-size: 18px;
 	--rec-display: none;
+  --main-color: #353430;
 	--accent-color: #FF8DCB;
 	--bg-color: #353430;
 	--main-heading-color: #FFC2E6;
@@ -46,9 +48,5 @@
 	--text-color: #353430;
 	--text-line-height: 23.4px;
 	--header-padding: 10px;
-  }
-
-  .page {
-    color: var(--bg-color);
   }
 }
