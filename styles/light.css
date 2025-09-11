@@ -28,21 +28,11 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-  --main-font: 'IBM Plex mono';
 	--bg-image: url('../images/cover-image-light.png');
-	--normal-weight: 400;
-	--bold-weight: 700;
-	--font-size: 18px;
 	--rec-display: none;
   --main-color: #353430;
-  --title-color: #353430;
 	--accent-color: #FF8DCB;
-	--bg-color: #fff1f7;
 	--main-heading-color: #FFC2E6;
-	--button-hover-color: #32312D66;
-  --button-active-color: #353430;
 	--text-color: #353430;
-	--text-line-height: 23.4px;
-	--header-padding: 10px;
   }
 }

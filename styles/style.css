@@ -164,7 +164,7 @@ a:focus-visible {
 	line-height: var(--text-line-height, 23.4px);
 }
 
-.subtitle__first {
+.subtitle__main {
 	margin-top: 10px;
 }
 
